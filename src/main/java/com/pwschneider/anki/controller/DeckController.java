@@ -16,8 +16,8 @@ public class DeckController {
 
     @GetMapping("/decks")
     public List<Deck> getAllDecks() {
+        // calls for the injected service
         return deckService.getAllDecks();
     }
-
 
 }
